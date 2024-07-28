@@ -91,6 +91,7 @@ body {
     border: 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     padding: 10px;
+    cursor: pointer;
 }
 .file_uploader{
     opacity: 0.8;
@@ -101,12 +102,13 @@ body {
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     border:  2px dotted var(--primaryDisabled);
+    cursor: pointer;
 }
 .steps_circle {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3))
 }
 .custom_button{
-    background-color: var(--primaryBlue);
+    background-color: var(--primaryBlue) !important;
     border: 0;
     border-radius: 10px;
 }
