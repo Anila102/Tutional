@@ -1,0 +1,153 @@
+:root {
+    --primaryWhite: rgba(255, 255, 255, 1);
+    --primaryBlack: rgba(0, 0, 0, 1);
+    --primaryBlue: rgba(56, 182, 255, 1);
+    --primaryDisabled: rgba(162, 162, 162, 1)
+}
+
+
+body {
+    font-family: "League Spartan", sans-serif !important;
+    background-image: url('../assets/background/bg_main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    max-height: 200px;
+}
+
+.video_container {
+    background-image: url('../assets/background/bottomEllipse.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 50vh;
+    width: 20vw;
+}
+
+.img_2 {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+
+}
+
+.blue_circle {
+    background-color: var(--primaryBlue);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+}
+
+.small_blue_circle {
+    width: 50px;
+    height: 50px;
+    top: 3%;
+    left: 3%;
+}
+
+.large_blue_circle {
+    width: 80px;
+    height: 80px;
+    top: 7%;
+    right: 2%;
+}
+
+.bottom_blue_circle {
+    width: 80px;
+    height: 80px;
+    left: -3%;
+    top: 83%
+}
+.video_bottom_blue_circle {
+    width: 350px;
+    height: 350px;
+    left: -14%;
+    top: 62%;
+    background:radial-gradient(circle at top right, rgba(56, 182, 255, 0.2), rgba(56, 182, 255, 0.8));
+}
+
+.header {
+    opacity: 0.8;
+    border-radius: 15px;
+    margin: 20px 62px !important;
+}
+.upload-container{
+    opacity: 0.8;
+    border-radius: 15px;
+    width: 100%;
+    /* height: 200px; */
+    background: rgba(241, 247, 250, 0.8);
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.input_field{
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.input_field:focus-visible{
+    border: none;
+}
+.pagination_arrow{
+    border: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+.file_uploader{
+    opacity: 0.8;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px !important;
+    background: rgba(241, 247, 250, 0.8);
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border:  2px dotted var(--primaryDisabled);
+}
+.steps_circle {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3))
+}
+.custom_button{
+    background-color: var(--primaryBlue);
+    border: 0;
+    border-radius: 10px;
+}
+.custom_button:hover{
+    background-color: var(--primaryBlue);
+    border: 0;
+    border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+    .small_blue_circle {
+        display: none;
+    }
+
+    .large_blue_circle {
+        display: none;
+    }
+
+    .header {
+        margin: 12px 10px !important;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:1440px) {
+    .small_blue_circle {
+        top: 1%;
+    }
+
+    .large_blue_circle {
+        top: 4%;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .small_blue_circle {
+        top: 1%;
+        left: 2%;
+    }
+
+    .large_blue_circle {
+        top: 4%;
+        right: 1%;
+        ;
+    }
+}
