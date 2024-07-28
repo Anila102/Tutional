@@ -109,7 +109,7 @@ body {
 }
 .custom_button{
     background-color: var(--primaryBlue) !important;
-    border: 0;
+    border: 0 !important;
     border-radius: 10px;
 }
 .custom_button:hover{
